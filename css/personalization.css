@@ -1,0 +1,40 @@
+/* Original template layout and typography are kept in style.min.css. */
+@font-face {
+    font-family: "InnaScript";
+    src: url("../assets/fonts/GreatVibes-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+.sm-section-type-2 { --bg-color: #efe1db; }
+.inna-copy p { margin: 0; }
+.inna-copy p + p { margin-top: 1em; }
+.sm-dress-code .inna-dress-text { margin-top: 20px; }
+.sm-footer__title { text-align: center; }
+.inna-greeting-title:focus { outline: none; }
+.sm-datetime .inna-greeting-title {
+    max-width: none;
+    white-space: nowrap;
+    font-family: "InnaScript", cursive;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: none;
+}
+.inna-farewell-greeting,
+.inna-signature {
+    font-family: "InnaScript", cursive;
+    font-weight: 400;
+    text-transform: none;
+}
+.inna-farewell-greeting { font-size: 72px; line-height: 1.35; }
+.inna-signature { font-size: 84px; line-height: 1.35; }
+.sm-location .inna-map-button { background-color: #efe1db; }
+.sm-location .inna-map-button:hover { background-color: #e4d2c9; }
+@media (max-width: 500px) {
+    .sm-datetime .inna-greeting-title {
+        font-size: clamp(40px, 11.5vw, 52px);
+    }
+    .inna-farewell-greeting { font-size: 48px; }
+    .inna-signature { font-size: 62px; }
+}
